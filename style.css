@@ -71,7 +71,7 @@ body {
 }
 
 .is-dragging {
-    opacity: 0.3;
+    opacity: 0;
 }
 
 .over {
