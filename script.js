@@ -8,14 +8,17 @@ cards.forEach( (card) => {
     card.addEventListener('dragend', dragend);
 })
 
+
 function dragstart(){
     dropZones.forEach( dropZone => dropZone.classList.add('highlight'));
     this.classList.add('is-dragging');
 }
 
+
 function drag() {
     dropZones.forEach( dropZone => dropZone.classList.add('highlight'));
 }
+
 
 function dragend(){
     cards.forEach( card => card.classList = 'card')
@@ -36,6 +39,7 @@ dropZones.forEach( dropZone => {
 function dragenter() {
     this.classList.add('over');
 }
+
 
 function dragover() {
     const cardBeingDrag = document.querySelector('.is-dragging');
