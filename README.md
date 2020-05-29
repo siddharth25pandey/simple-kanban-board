@@ -14,4 +14,4 @@ This is a simple kanban app for learning purposes. A Kanban board is one of the 
 <br>
 <br>
 <br>
-This is a simple project based on this [youtube tutorial](https://www.youtube.com/watch?v=6wn8hpUcEcM). I pretend to keep adding some functionalities to learn new concepts. Fell free to help. 
+This is a simple project based on this [youtube tutorial](https://www.youtube.com/watch?v=6wn8hpUcEcM). I pretend to keep adding some functionalities to learn new concepts. Feel free to help me!
