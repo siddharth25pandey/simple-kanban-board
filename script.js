@@ -40,7 +40,9 @@ function dragenter() {
 function dragover() {
     const cardBeingDrag = document.querySelector('.is-dragging');
 
-    if (cardBeingDrag !== null) { this.appendChild(cardBeingDrag) }; 
+    if (cardBeingDrag !== null) { 
+        this.appendChild(cardBeingDrag) 
+    }; 
 }
 
 
