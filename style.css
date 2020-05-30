@@ -71,7 +71,8 @@ body {
     background-color: #fd951f08;
 }
 
-.card, .dropzone {
+.card,
+.dropzone {
     transition: .4s;
 }
 
@@ -83,36 +84,78 @@ body {
     background-color: #4cd13711;
 }
 
-
 .tag-container {
     display: flex;
     justify-content: space-between;
     width: 115px;
     height: 30px;
-    
-
 }
 
-
-.tag-container > .second {
-    visibility: hidden;  
-}
-
-.tag-container > .third {
+.tag-container>.second {
     visibility: hidden;
 }
 
+.tag-container>.third {
+    visibility: hidden;
+}
 
-.expand > .second {
+.expand>.second {
     visibility: visible;
 }
 
-.expand > .third {
+.expand>.third {
     visibility: visible;
 }
 
+.cursor {
+    cursor: pointer;
+}
 
+.but {
+    -webkit-border-radius: 70px;
+    margin: 20px 90px;
+    border-radius: 2em;
+    background-color: green;
+    border: dashed red;
+    color: blueviolet;
+    padding: 24px 36px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 450px;
+    display: inline-block;
+    -webkit-animation: glo 1300ms infinite;
+    -moz-animation: glo 1300ms infinite;
+    -o-animation: glo 1300ms infinite;
+    animation: glo 2500ms infinite;
+}
 
+@-webkit-keyframes glo {
+    0% {
+        background-color: whitesmoke;
+        -webkit-box-shadow: 0 0 3px green;
+    }
+    50% {
+        background-color: pink;
+        -webkit-box-shadow: 0 0 15px green;
+    }
+    100% {
+        background-color: yellow;
+        -webkit-box-shadow: 0 0 4px black;
+    }
+}
 
-
-
+@keyframes glo {
+    0% {
+        background-color: red;
+        box-shadow: 0 0 3px red;
+    }
+    50% {
+        background-color: yellow;
+        box-shadow: 0 0 15px green;
+    }
+    100% {
+        background-color: darkolivegreen;
+        box-shadow: 0 0 4px skyblue;
+    }
+}
