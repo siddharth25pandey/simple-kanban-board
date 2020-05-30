@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('.card');
 const dropZones = document.querySelectorAll('.dropzone');
+const tagContainers = document.querySelectorAll('.tag-container')
+
 
 
 cards.forEach( (card) => {
@@ -56,8 +58,53 @@ function dragleave() {
 }
 
 
+tagContainers.forEach(tagContainer => {
+
+    let allTags = Array(tagContainer.childNodes[0], tagContainer.childNodes[2], tagContainer.childNodes[4]);
+
+    let firstTag = allTags[0];
+    let secondTag = allTags[1];
+    let thirdTag = allTags[2];
+
+    console.log(secondTag.classList)
+
+    firstTag.addEventListener('click', () => {
+        tagContainer.classList.toggle('expand')
+
+    })
+
+    secondTag.addEventListener('click', () => {
+        let firstColor = firstTag.classList[2];
+        let secondColor = secondTag.classList[2];
+
+        firstTag.classList.remove(firstColor);
+        firstTag.classList.add(secondColor);
+
+        secondTag.classList.remove(secondColor);
+        secondTag.classList.add(firstColor);
+
+        tagContainer.classList.toggle('expand')
+
+    })
+
+    thirdTag.addEventListener('click', () => {
+        let firstColor = firstTag.classList[2];
+        let thirdColor = thirdTag.classList[2];
+
+        firstTag.classList.remove(firstColor);
+        firstTag.classList.add(thirdColor);
+
+        thirdTag.classList.remove(thirdColor);
+        thirdTag.classList.add(firstColor);
+
+        tagContainer.classList.toggle('expand')
+
+    })
 
 
+
+
+})
 
 
 

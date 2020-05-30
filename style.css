@@ -50,6 +50,11 @@ body {
     border-radius: 8px;
 }
 
+.status:hover {
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
 .status.green {
     background: #23d2ac;
 }
@@ -76,6 +81,34 @@ body {
 
 .over {
     background-color: #4cd13711;
+}
+
+
+.tag-container {
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    height: 30px;
+    
+
+}
+
+
+.tag-container > .second {
+    visibility: hidden;  
+}
+
+.tag-container > .third {
+    visibility: hidden;
+}
+
+
+.expand > .second {
+    visibility: visible;
+}
+
+.expand > .third {
+    visibility: visible;
 }
 
 
